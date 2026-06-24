@@ -14,7 +14,7 @@ import {
 import { motion } from "framer-motion";
 import Reveal from "./components/Reveal";
 import { MdEmail } from "react-icons/md";
-import resume from "./assets/resume.pdf";
+import resume from "./assets/Resume.pdf";
 import { FaFilePdf } from "react-icons/fa";
 import "@fontsource/space-grotesk";
 import profilePic from "./assets/profile.jpeg";
