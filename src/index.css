@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@keyframes floatLeft {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(40px, -30px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes floatRight {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-30px, 40px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.float-left {
+  animation: floatLeft 18s ease-in-out infinite;
+}
+
+.float-right {
+  animation: floatRight 22s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translateX(-10%) translateY(0%);
+  }
+
+  50% {
+    transform: translateX(10%) translateY(-5%);
+  }
+
+  100% {
+    transform: translateX(-10%) translateY(0%);
+  }
+}
+
+.aurora {
+  animation: aurora 18s ease-in-out infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(40px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.animate-blob {
+  animation: floatBlob 15s ease-in-out infinite;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+@keyframes floatScroll {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.scroll-indicator {
+  animation: floatScroll 2s ease-in-out infinite;
+}
+@keyframes glowDot {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.glow-dot {
+  animation: glowDot 2s ease-in-out infinite;
+}
